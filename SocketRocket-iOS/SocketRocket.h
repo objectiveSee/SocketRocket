@@ -1,5 +1,5 @@
 //
-//   Copyright 2012 Square Inc.
+//   Copyright 2012 - 2015 Square Inc.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -15,10 +15,4 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
-@interface NSData (SRB64Additions)
-
-- (NSString *)SR_stringByBase64Encoding;
-
-@end
+#import <SocketRocket/SRWebSocket.h>
