@@ -367,6 +367,8 @@ static __strong NSData *CRLFCRLF;
         sr_dispatch_release(_workQueue);
         _workQueue = NULL;
     }
+
+    inflateEnd(&_inflator);
     
     if (_receivedHTTPHeaders) {
         CFRelease(_receivedHTTPHeaders);
